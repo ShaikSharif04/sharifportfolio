@@ -1,9 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, MapPin, Calendar } from "lucide-react";
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20 bg-gradient-secondary">
+  return <section id="about" className="py-20 bg-gradient-secondary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">About Me</h2>
@@ -17,7 +15,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Bio Content */}
           <div className="space-y-6">
-            <p className="text-lg text-foreground leading-relaxed">
+            <p className="text-lg text-foreground leading-relaxed mx-0 my-0 py-0 px-0">
               With a strong foundation in analytics, software development, and machine learning, I am eager to 
               contribute to innovative projects that make real-world impact. I'm actively seeking opportunities 
               where I can apply my skills, grow as a professional, and support organizational goals through 
@@ -108,8 +106,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
