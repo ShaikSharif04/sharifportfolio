@@ -36,12 +36,12 @@ All colors MUST be HSL.
     --input: 270 15% 95%;
     --ring: 270 70% 55%;
 
-    /* Custom portfolio colors */
-    --gradient-primary: linear-gradient(135deg, hsl(270, 70%, 55%), hsl(300, 80%, 70%));
-    --gradient-secondary: linear-gradient(135deg, hsl(270, 20%, 95%), hsl(300, 30%, 98%));
-    --hero-bg: linear-gradient(135deg, hsl(270, 70%, 55%) 0%, hsl(300, 80%, 70%) 50%, hsl(320, 85%, 75%) 100%);
-    --shadow-elegant: 0 10px 30px -10px hsl(270 70% 55% / 0.3);
-    --shadow-glow: 0 0 40px hsl(300 80% 70% / 0.4);
+    /* Custom portfolio colors - cleaner purple theme */
+    --gradient-primary: linear-gradient(135deg, hsl(270, 60%, 50%), hsl(280, 70%, 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(270, 20%, 98%), hsl(280, 15%, 99%));
+    --hero-bg: linear-gradient(135deg, hsl(270, 60%, 50%) 0%, hsl(280, 70%, 60%) 100%);
+    --shadow-elegant: 0 4px 20px -4px hsl(270 60% 50% / 0.15);
+    --shadow-glow: 0 0 20px hsl(280 70% 60% / 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
@@ -93,9 +93,9 @@ All colors MUST be HSL.
     --ring: 270 70% 65%;
 
     /* Dark mode custom colors */
-    --gradient-primary: linear-gradient(135deg, hsl(270, 70%, 65%), hsl(300, 80%, 75%));
-    --gradient-secondary: linear-gradient(135deg, hsl(217, 33%, 18%), hsl(270, 20%, 20%));
-    --hero-bg: linear-gradient(135deg, hsl(270, 70%, 35%) 0%, hsl(300, 60%, 45%) 50%, hsl(320, 65%, 55%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(270, 60%, 55%), hsl(280, 70%, 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(217, 33%, 15%), hsl(270, 20%, 18%));
+    --hero-bg: linear-gradient(135deg, hsl(270, 60%, 40%) 0%, hsl(280, 70%, 50%) 100%);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
