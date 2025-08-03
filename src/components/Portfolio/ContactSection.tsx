@@ -90,6 +90,43 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-6">
+        
+        {/* Contact Information Card */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <Card className="shadow-elegant hover:shadow-glow transition-all duration-300">
+            <CardHeader>
+              <CardTitle className="text-2xl text-primary flex items-center justify-center space-x-2">
+                <MapPin className="h-6 w-6" />
+                <span>Contact Information</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {contactInfo.map((info, index) => (
+                  <a
+                    key={index}
+                    href={info.link}
+                    target={info.link.startsWith('http') ? '_blank' : undefined}
+                    rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="flex flex-col items-center text-center p-4 rounded-lg hover:bg-muted transition-colors duration-300 group"
+                  >
+                    <div className="text-primary group-hover:text-accent transition-colors duration-300 mb-3">
+                      {info.icon}
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
+                      <p className="text-foreground font-medium group-hover:text-primary transition-colors duration-300 text-sm">
+                        {info.value}
+                      </p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Main Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Get In Touch</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -97,11 +134,11 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Form */}
+        {/* Contact Form */}
+        <div className="max-w-2xl mx-auto">
           <Card className="shadow-elegant hover:shadow-glow transition-all duration-300">
             <CardHeader>
-              <CardTitle className="text-2xl text-primary flex items-center space-x-2">
+              <CardTitle className="text-2xl text-primary flex items-center justify-center space-x-2">
                 <Send className="h-6 w-6" />
                 <span>Send a Message</span>
               </CardTitle>
@@ -169,50 +206,6 @@ const ContactSection = () => {
               </form>
             </CardContent>
           </Card>
-
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <Card className="shadow-elegant hover:shadow-glow transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="text-2xl text-primary flex items-center space-x-2">
-                  <MapPin className="h-6 w-6" />
-                  <span>Contact Information</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                {contactInfo.map((info, index) => (
-                  <a
-                    key={index}
-                    href={info.link}
-                    target={info.link.startsWith('http') ? '_blank' : undefined}
-                    rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="flex items-center space-x-4 p-3 rounded-lg hover:bg-muted transition-colors duration-300 group"
-                  >
-                    <div className="text-primary group-hover:text-accent transition-colors duration-300">
-                      {info.icon}
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">{info.label}</p>
-                      <p className="text-foreground font-medium group-hover:text-primary transition-colors duration-300">
-                        {info.value}
-                      </p>
-                    </div>
-                  </a>
-                ))}
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-elegant hover:shadow-glow transition-all duration-300">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-primary mb-4">Let's Collaborate</h3>
-                <p className="text-foreground leading-relaxed">
-                  I'm always interested in discussing new opportunities, innovative projects, 
-                  and ways to apply data science to solve real-world problems. Whether you have 
-                  a specific project in mind or just want to connect, I'd love to hear from you.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
     </section>
