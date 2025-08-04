@@ -56,7 +56,40 @@ const AboutSection = () => {
                   <GraduationCap className="h-5 w-5 text-primary" />
                   <h3 className="text-base font-semibold text-primary">Pre-University Education</h3>
                 </div>
-                <p className="text-sm font-medium text-foreground">ASR Govt Jr College</p>
+                <p className="text-sm font-medium text-foreground mb-1">ASR Govt Jr College</p>
+                <div className="flex items-center space-x-1 text-xs text-muted-foreground mb-1">
+                  <MapPin className="h-3 w-3" />
+                  <span>Khammam, India</span>
+                </div>
+                <div className="flex items-center space-x-1 text-xs text-muted-foreground mb-2">
+                  <Calendar className="h-3 w-3" />
+                  <span>2021 - 2022</span>
+                </div>
+                <span className="inline-block bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">
+                  Grade: 65.9%
+                </span>
+              </CardContent>
+            </Card>
+
+            {/* Secondary Education Card */}
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/20 shadow-elegant">
+              <CardContent className="p-4">
+                <div className="flex items-center space-x-2 mb-3">
+                  <GraduationCap className="h-5 w-5 text-primary" />
+                  <h3 className="text-base font-semibold text-primary">Secondary Education</h3>
+                </div>
+                <p className="text-sm font-medium text-foreground mb-1">MJPTBCWREIS</p>
+                <div className="flex items-center space-x-1 text-xs text-muted-foreground mb-1">
+                  <MapPin className="h-3 w-3" />
+                  <span>Khammam, India</span>
+                </div>
+                <div className="flex items-center space-x-1 text-xs text-muted-foreground mb-2">
+                  <Calendar className="h-3 w-3" />
+                  <span>2020</span>
+                </div>
+                <span className="inline-block bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">
+                  GPA: 10/10
+                </span>
               </CardContent>
             </Card>
           </div>
