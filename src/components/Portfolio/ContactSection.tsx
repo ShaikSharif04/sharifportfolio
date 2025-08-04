@@ -82,7 +82,7 @@ const ContactSection = () => {
     {
       icon: <Github className="h-6 w-6" />,
       label: "GitHub",
-      value: "ShaikSharif04",
+      value: "@ShaikSharif04",
       link: "https://github.com/ShaikSharif04"
     }
   ];
