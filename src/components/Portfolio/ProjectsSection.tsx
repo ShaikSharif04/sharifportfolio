@@ -80,14 +80,28 @@ const ProjectsSection = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button className="flex items-center space-x-2 bg-primary hover:bg-primary/90">
-                  <ExternalLink className="h-4 w-4" />
-                  <span>View Project Details</span>
-                </Button>
-                <Button variant="outline" className="flex items-center space-x-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  <Github className="h-4 w-4" />
-                  <span>Source Code</span>
-                </Button>
+                <a
+                  href="https://github.com/ShaikSharif04/Mini-Project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View project details on GitHub"
+                >
+                  <Button className="flex items-center space-x-2 bg-primary hover:bg-primary/90">
+                    <ExternalLink className="h-4 w-4" />
+                    <span>View Project Details</span>
+                  </Button>
+                </a>
+                <a
+                  href="https://github.com/ShaikSharif04/Mini-Project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View source code on GitHub"
+                >
+                  <Button variant="outline" className="flex items-center space-x-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                    <Github className="h-4 w-4" />
+                    <span>Source Code</span>
+                  </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
