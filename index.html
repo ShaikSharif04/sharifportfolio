@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sharif45</title>
+    <title>Sharif45</title>
     <meta name="description" content="Lovable Generated Project" />
     <meta name="author" content="Lovable" />
 
-    <link rel="icon" href="https://i.postimg.cc/cHVLFjKz/innovative.png" type="image/png" />
+    <link id="dynamic-favicon" rel="icon" href="https://i.postimg.cc/VLtCP9mM/innovative-page-0001.jpg" type="image/jpeg" />
 
-    <meta property="og:title" content="sharif45" />
+    <meta property="og:title" content="Sharif45" />
     <meta property="og:description" content="Lovable Generated Project" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
@@ -17,6 +17,45 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <script>
+      (function() {
+        var src = 'https://i.postimg.cc/VLtCP9mM/innovative-page-0001.jpg';
+        try {
+          var img = new Image();
+          img.crossOrigin = 'anonymous';
+          img.onload = function() {
+            var size = 256;
+            var canvas = document.createElement('canvas');
+            canvas.width = size; canvas.height = size;
+            var ctx = canvas.getContext('2d');
+            if (!ctx) return;
+            ctx.clearRect(0, 0, size, size);
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(size/2, size/2, size/2, 0, Math.PI * 2);
+            ctx.closePath();
+            ctx.clip();
+
+            var iw = img.naturalWidth, ih = img.naturalHeight;
+            var scale = Math.max(size/iw, size/ih);
+            var nw = iw * scale, nh = ih * scale;
+            var dx = (size - nw)/2, dy = (size - nh)/2;
+            ctx.drawImage(img, dx, dy, nw, nh);
+            ctx.restore();
+
+            var url = canvas.toDataURL('image/png');
+            var link = document.querySelector('link[rel="icon"]') || document.createElement('link');
+            link.rel = 'icon';
+            link.type = 'image/png';
+            link.href = url;
+            if (!link.parentNode) document.head.appendChild(link);
+          };
+          img.onerror = function(){};
+          img.src = src;
+        } catch(e) {}
+      })();
+    </script>
   </head>
 
   <body>
