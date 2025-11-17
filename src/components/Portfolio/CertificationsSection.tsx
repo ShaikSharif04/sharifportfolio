@@ -52,6 +52,14 @@ const CertificationsSection = () => {
       date: "November 2025",
       category: "Technical",
       certificateUrl: "https://drive.google.com/file/d/1fFyf6C0vBce_C-BbMiuzO0JfbC6R_9qG/view?usp=drive_link"
+    },
+    {
+      title: "AWS Cloud Practitioner Essentials",
+      organization: "AWS",
+      provider: "AWS",
+      date: "November 2025",
+      category: "Technical",
+      certificateUrl: "https://drive.google.com/file/d/1ObW3jbiKOEkpzODCJtMulrgjPdMQ2y02/view?usp=drive_link"
     }
   ];
 
