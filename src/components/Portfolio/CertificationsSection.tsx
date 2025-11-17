@@ -44,6 +44,14 @@ const CertificationsSection = () => {
       date: "January 2024",
       category: "Technical",
       certificateUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/PwC%20Switzerland/a87GpgE6tiku7q3gu_PwC%20Switzerland_sYBJDZ5LDZsH2HwTq_1717062534967_completion_certificate.pdf"
+    },
+    {
+      title: "Agentforce Specialist",
+      organization: "Salesforce",
+      provider: "Salesforce",
+      date: "November 2025",
+      category: "Technical",
+      certificateUrl: "https://drive.google.com/file/d/1fFyf6C0vBce_C-BbMiuzO0JfbC6R_9qG/view?usp=drive_link"
     }
   ];
 
