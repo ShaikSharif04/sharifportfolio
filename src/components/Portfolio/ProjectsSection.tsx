@@ -5,18 +5,23 @@ import { Calendar, ExternalLink, Github } from "lucide-react";
 
 const ProjectsSection = () => {
   const project = {
-    title: "Helmet Detection using Machine Learning and Automatic License Plate Recognition",
-    duration: "Dec 2024 – May 2025",
-    description: "Developed an intelligent system to detect helmets and recognize license plates from real-time footage using advanced computer vision techniques.",
+    title: "RetailPulse – AI-Powered Retail Sales & Profit Intelligence System",
+    duration: "November 2026",
+    description: "Developed an interactive retail business intelligence platform that enables retail managers to analyze sales performance, monitor profitability, identify business trends, and make data-driven decisions by uploading retail transaction datasets.",
     features: [
-      "Implemented YOLOv5 object detection model for helmet detection",
-      "Integrated Tesseract OCR for automatic license plate recognition",
-      "Real-time processing capabilities for traffic monitoring",
-      "Contributed to road safety enforcement through automation"
+      "Interactive dashboard for revenue, gross profit, transactions, average order value, and gross margin",
+      "CSV and Excel dataset uploads",
+      "Product, store, regional, and customer-level performance analysis",
+      "Current-versus-previous-period comparisons to identify changes in business performance",
+      "Automated business alerts using rule-based analysis",
+      "Actionable business recommendations based on analytical findings",
+      "Downloadable PDF business reports"
     ],
-    technologies: ["Python", "OpenCV", "YOLOv5", "Tesseract OCR", "Machine Learning"],
-    status: "In Development",
-    impact: "Enhances road safety through automated enforcement systems"
+    technologies: ["Python", "Pandas", "NumPy", "Streamlit", "Plotly", "OpenPyXL", "ReportLab"],
+    status: "Deployed – Live Project",
+    impact: "Helps retail managers understand business performance, identify potential profitability issues, and make informed decisions through automated data analysis",
+    liveDemo: "https://retailpulse-ai-dashboard.streamlit.app/",
+    sourceCode: "https://github.com/ShaikSharif04/retailpulse"
   };
 
   return (
@@ -81,21 +86,21 @@ const ProjectsSection = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <a
-                  href="https://github.com/ShaikSharif04/Mini-Project"
+                  href={project.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="View project details on GitHub"
+                  aria-label="Open the RetailPulse live demo"
                 >
                   <Button className="flex items-center space-x-2 bg-primary hover:bg-primary/90">
                     <ExternalLink className="h-4 w-4" />
-                    <span>View Project Details</span>
+                    <span>Live Demo</span>
                   </Button>
                 </a>
                 <a
-                  href="https://github.com/ShaikSharif04/Mini-Project"
+                  href={project.sourceCode}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="View source code on GitHub"
+                  aria-label="View RetailPulse source code on GitHub"
                 >
                   <Button variant="outline" className="flex items-center space-x-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                     <Github className="h-4 w-4" />
