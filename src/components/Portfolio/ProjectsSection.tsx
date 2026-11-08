@@ -20,7 +20,7 @@ const ProjectsSection = () => {
     technologies: ["Python", "Pandas", "NumPy", "Streamlit", "Plotly", "OpenPyXL", "ReportLab"],
     status: "Deployed – Live Project",
     impact: "Helps retail managers understand business performance, identify potential profitability issues, and make informed decisions through automated data analysis",
-    liveDemo: "https://retailpulse-ai-dashboard.streamlit.app/",
+    liveDemo: "https://retailpluse-ai-dashboard.streamlit.app/",
     sourceCode: "https://github.com/ShaikSharif04/retailpulse"
   };
 
